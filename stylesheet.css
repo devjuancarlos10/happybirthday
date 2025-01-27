@@ -8,11 +8,14 @@ body {
 	transition:background-color linear 5s;
 	overflow-x:hidden;
 }
+
+
+
 .container {
 	display: none;
 }
 .peach {
-	background-color: #FFDAB9;
+	background-color: #000;
 	
 }
 .peach-after {
@@ -25,90 +28,90 @@ body {
 
 @-webkit-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #000;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #000;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 }
 @-moz-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #000;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #000;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 }
 
 @-o-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #000;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #000;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 }
 
 @-ms-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #000;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #000;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 }
 
 @keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #000;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #000;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #000;
 	}
 }
 
@@ -969,7 +972,7 @@ audio {
 }
 
 .bannar {
-	max-width: 100%;
+	width: 300px;
 	-webkit-transform:translate(0px,-500px);
 	-moz-transform:translate(0px,-500px);
 	-o-transform:translate(0px,-500px);
@@ -1056,7 +1059,7 @@ audio {
 	100% {
 		-ms-transform:translate(0px,0px);
 	}
-}o
+}
 @keyframes bannar_come {
 	0%{
 		transform:translate(0px,-1000px);
@@ -1083,7 +1086,7 @@ audio {
 	width: 100px;
 	height: 183px;
 	background-repeat: no-repeat no-repeat;
-	background-size: 100px 183px;
+	background-size: 100%;
 }
 .balloons h2 {
 	text-transform: uppercase;
@@ -1264,8 +1267,9 @@ audio {
 	display: none;
 }
 
+
 .cake-cover {
-	margin-top: 50px;
+	margin-top: 10px;
 }
 .message {
 	margin-top: 200px;
@@ -1281,7 +1285,10 @@ audio {
 	font-weight: bold;
 }
 
+
+
 .btn-primary {
+	margin-bottom: 3rem;
         border-color: #466baf;
         padding: 10px;
         text-transform: uppercase;
@@ -1300,11 +1307,81 @@ audio {
         background-color: #466baf;
     }
 
+.btn-primary:focus{
+	outline: 0;
+	box-shadow: none;
+}
+
+.btn-primary:active{
+	outline: 0;
+	box-shadow: none;
+}
+#turn_on{
+	background-color: #ff002b;
+	border: none;
+}
+
+#play{
+	background-color: #ff002b;
+	border: none;
+}
+
+#bannar_coming{
+	background-color: #ff002b;
+	border: none;
+}
+
+#balloons_flying{
+	background-color: #ff002b;
+	border: none;
+}
+
+#cake_fadein{
+	background-color: #ff002b;
+	border: none;
+}
+
+#light_candle{
+	background-color: #ff002b;
+	border: none;
+}
+
+#wish_message{
+	background-color: #ff002b;
+	border: none;
+}
+
+#story{
+	background-color: #ff002b;
+	border: none;
+}
+@media only screen and (max-width: 720px){
+	#b11{
+		margin-left: 18rem;
+	}
+	#b22{
+		margin-left: 13rem;
+	}
+
+	#b33{
+		margin-left: 8rem;
+	}
+
+	#b44{
+		margin-left: 3rem;
+	}
+
+	#b66{
+		margin-right: -3rem;
+	}
 
 
-    /*controlling tablet width*/
-    /*@media only screen and (max-width: 720px){
-    	.container {
-    		-webkit-transform: scale(0.9);
-    	}
-    }*/
+    	.balloons{
+		width: 50px;
+		}
+
+		.balloons h2{
+		font-size: 20px;
+		color: #000;
+		}
+}
